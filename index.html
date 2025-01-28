@@ -3,7 +3,14 @@
 <head>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-	<script src="img/map.webp"></script>
+	<script src="img/map1.webp"></script>
+	<script src="img/map2.webp"></script>
+	<script src="img/map3.webp"></script>
+	<script src="img/map4.webp"></script>
+	<script src="img/map5.webp"></script>
+	<script src="img/map6.webp"></script>
+	<script src="img/map7.webp"></script>
+	<script src="img/map8.webp"></script>
 	<style>
 		#map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
 	</style>
@@ -17,9 +24,31 @@
 		L.tileLayer('https://api.maptiler.com/maps/toner-v2/{z}/{x}/{y}.png?key=6QsSMfivpBBbXU7NVlRq', {
 			attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
 		}).addTo(map);
-		var LAmap = 'img/map.webp',
-	imageBounds = [[33.415010, -94.501402], [23.948185, -88.612730]];
-L.imageOverlay(LAmap, imageBounds).addTo(map);
+		var map1 = 'img/map1.webp',
+	imageBounds = [[33.431000, -94.482000], [31.1444000, -91.574750]];
+L.imageOverlay(map1, imageBounds).addTo(map);
+		var map2 = 'img/map2.webp',
+	imageBounds = [[33.431000, -91.574750], [31.1444000, -88.667500]];
+L.imageOverlay(map2, imageBounds).addTo(map);
+		var map3 = 'img/map3.webp',
+	imageBounds = [[31.1444000, -94.482000], [28.8004000, -91.574750]];
+L.imageOverlay(map3, imageBounds).addTo(map);
+		var map4 = 'img/map4.webp',
+	imageBounds = [[31.1444000, -91.574750], [28.8004000, -88.667500]];
+L.imageOverlay(map4, imageBounds).addTo(map);
+		var map5 = 'img/map5.webp',
+	imageBounds = [[28.8004000, -94.482000], [26.4030000, -91.574750]];
+L.imageOverlay(map5, imageBounds).addTo(map);
+		var map6 = 'img/map6.webp',
+	imageBounds = [[28.8004000, -91.574750], [26.4030000, -88.667500]];
+L.imageOverlay(map6, imageBounds).addTo(map);
+		var map7 = 'img/map7.webp',
+	imageBounds = [[26.4030000, -94.482000], [23.9550000, -91.574750]];
+L.imageOverlay(map7, imageBounds).addTo(map);
+		var map8 = 'img/map8.webp',
+	imageBounds = [[26.4030000, -91.574750], [23.9550000, -88.667500]];
+L.imageOverlay(map8, imageBounds).addTo(map);
+
 	</script>
 
 <body>
