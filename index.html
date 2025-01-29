@@ -48,6 +48,19 @@ L.imageOverlay(map7, imageBounds).addTo(map);
 		var map8 = 'img/map8.webp',
 	imageBounds = [[26.4030000, -91.574750], [23.9550000, -88.667500]];
 L.imageOverlay(map8, imageBounds).addTo(map);
+		var CamIcon = L.icon({
+    iconUrl: 'img/Camarilla.webp',
+    iconSize: [20, 44],
+	iconAnchor: [10, 44],
+	tooltipAnchor: [0, 44],
+	popupAnchor: [0, -44],
+	shadowUrl: 'img/CamShadow.webp',
+	shadowSize: [44, 44],
+	ShadowAnchor: [0, 0]
+});
+
+<!--Elysium-->
+L.marker([29.986326, -90.093188],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('Elysium');
 
 	</script>
 
