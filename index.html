@@ -18,9 +18,33 @@ var map = L.map('map', {
 	zoom: 0,
     crs: L.CRS.Simple
 });
-var bounds = [[0,0], [-1638,892]];
-var image = L.imageOverlay('img/LAmap.webp', bounds).addTo(map);
-map.fitBounds(bounds);
+var bounds1 = [[0,0], [-444,484]];
+var image1 = L.imageOverlay('img/map1.webp', bounds1).addTo(map);
+map.fitBounds(bounds1);
+var bounds2 = [[0,484], [-444,968]];
+var image2 = L.imageOverlay('img/map2.webp', bounds2).addTo(map);
+map.fitBounds(bounds2);
+var bounds3 = [[0,968], [-444,1452]];
+var image3 = L.imageOverlay('img/map3.webp', bounds3).addTo(map);
+map.fitBounds(bounds3);
+var bounds4 = [[0,1452], [-444,1936]];
+var image4 = L.imageOverlay('img/map4.webp', bounds4).addTo(map);
+map.fitBounds(bounds4);
+var bounds5 = [[-444,0], [-888,484]];
+var image5 = L.imageOverlay('img/map5.webp', bounds5).addTo(map);
+map.fitBounds(bounds5);
+var bounds6 = [[-444,484], [-888,968]];
+var image6 = L.imageOverlay('img/map6.webp', bounds6).addTo(map);
+map.fitBounds(bounds6);
+var bounds7 = [[-444,968], [-888,1452]];
+var image7 = L.imageOverlay('img/map7.webp', bounds7).addTo(map);
+map.fitBounds(bounds7);
+var bounds8 = [[-444,1452], [-888,1936]];
+var image8 = L.imageOverlay('img/map8.webp', bounds8).addTo(map);
+map.fitBounds(bounds8);
+var bounds9 = [[0,0], [-888,1936]];
+var image9 = L.imageOverlay('img/mapblank.webp', bounds9).addTo(map);
+map.fitBounds(bounds9);
 
 var CamIcon = L.icon({
 	iconUrl: 'img/Camarilla.webp',
@@ -34,7 +58,7 @@ var CamIcon = L.icon({
 });
 
 <!--Elysium-->
-L.marker([-1530, 85],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('Elysium');
+L.marker([-771,1061],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('Elysium');
 
 	</script>
 
