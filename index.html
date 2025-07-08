@@ -769,26 +769,6 @@ var bounds0 = [[0,0], [-1140,1424]];
 var image0 = L.imageOverlay('img/mapblank.webp', bounds0).addTo(map);
 map.fitBounds(bounds0);
 
-var CamIcon = L.icon({
-	iconUrl: 'img/Camarilla.webp',
-	iconSize: [20, 44],
-	iconAnchor: [10, 44],
-	tooltipAnchor: [0, 44],
-	popupAnchor: [0, -44],
-	shadowUrl: 'img/CamShadow.webp',
-	shadowSize: [44, 44],
-	shadowAnchor: [0, 0]
-});
-var CollegeIcon = L.icon({
-	iconUrl: 'img/College.webp',
-	iconSize: [44, 44],
-	iconAnchor: [22, 44],
-	tooltipAnchor: [0, 44],
-	popupAnchor: [0, -44],
-	<!--shadowUrl: 'img/CollegeShadow.webp',-->
-	<!--shadowSize: [50, 70],-->
-	<!--shadowAnchor: [15, 70]-->
-});
 <!--New Orleans inner city-->
 
 <!--New Orleans East District-->
@@ -971,8 +951,33 @@ var latlngsLW = [[-403,744],[-409,849],[-465,821],[-443,804],[-452,776],[-472,75
 
 var polygonLW = L.polygon(latlngsLW, {color: '#214fc6', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Jefferson</u></br>Camarilla</p>');
 
+var CamIcon = L.icon({
+	iconUrl: 'img/Camarilla.webp',
+	iconSize: [20, 44],
+	iconAnchor: [10, 44],
+	tooltipAnchor: [0, 44],
+	popupAnchor: [0, -44],
+});
+var CollegeIcon = L.icon({
+	iconUrl: 'img/College.webp',
+	iconSize: [44, 44],
+	iconAnchor: [22, 44],
+	tooltipAnchor: [0, 44],
+	popupAnchor: [0, -44],
+	});
+var ZooIcon = L.icon({
+	iconUrl: 'img/Zoo.webp',
+	iconSize: [44, 44],
+	iconAnchor: [22, 44],
+	tooltipAnchor: [0, 44],
+	popupAnchor: [0, -44],
+	});
+
 <!--The University of New Orleans-->
 L.marker([-256,986],{icon: CollegeIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>The University of New Orleans</u></p>');
+
+<!--Audubon Zoo-->
+L.marker([-531,839],{icon: ZooIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Audubon Zoo</u></p>');
 
 <!--Elysium-->
 <!--L.marker([-363.5,927.5],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Elysium<br />New Orleans Museum of Art</center></p>');-->
