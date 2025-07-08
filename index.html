@@ -993,6 +993,14 @@ var AirportIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var FlowerIcon = L.icon({
+	iconUrl: 'img/Flower.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 28],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+	
 <!--The University of New Orleans-->
 L.marker([-256,986],{icon: CollegeIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>The University of New Orleans</u></p>');
 
@@ -1013,6 +1021,9 @@ L.marker([-358,553],{icon: AirportIcon},{riseOnHover: true}).addTo(map).bindPopu
 
 <!--New Orleans Lakefront Airport-->
 L.marker([-220,1080],{icon: AirportIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>New Orleans Lakefront Airport</u></p>');
+
+<!--New Orleans Botanical Garden-->
+L.marker([-358,922],{icon: FlowerIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>New Orleans Botanical Garden</u></p>');
 
 <!--Elysium-->
 <!--L.marker([-363.5,927.5],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Elysium<br />New Orleans Museum of Art</center></p>');-->
