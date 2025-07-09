@@ -1158,6 +1158,13 @@ var FlowerIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var ChurchIcon = L.icon({
+	iconUrl: 'img/Church.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 28],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 	
 <!--The University of New Orleans-->
 L.marker([-256,986],{icon: CollegeIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>The University of New Orleans</u></p>');
@@ -1182,6 +1189,9 @@ L.marker([-220,1080],{icon: AirportIcon},{riseOnHover: true}).addTo(map).bindPop
 
 <!--New Orleans Botanical Garden-->
 L.marker([-358,922],{icon: FlowerIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>New Orleans Botanical Garden</u></p>');
+
+<!--St. Louis Cathedral-->
+L.marker([-438.5,994],{icon: ChurchIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>St. Louis Cathedral</u></p>');
 
 <!--Mysterious Shack-->
 L.marker([-423,1327],{icon: SamediIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Mysterious Shack</u></br></br><img src="img/Samedi.webp" style="width:40px;height:40px;"></p>');
