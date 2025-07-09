@@ -825,7 +825,7 @@ var polygonLW = L.polygon(latlngsLW, {color: '#214fc6', stroke: true, opacity: [
 <!--Bayou Bienvenue-->
 var latlngsLW = [[-261,1424],[-297,1350],[-324,1243],[-336,1119],[-352,1091],[-378,1090],[-386,1125],[-396,1148],[-407,1149],[-401,1156],[-431,1230],[-444,1236],[-434,1241],[-481,1353],[-532,1385],[-543,1391],[-570,1409],[-605,1424]];
 
-var polygonLW = L.polygon(latlngsLW, {color: 'black', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Bayou Bienvenue</u></p>');
+var polygonLW = L.polygon(latlngsLW, {color: '#8bbe1b', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Bayou Bienvenue</u></br>Samedi</p>');
 <!--Chalmette-->
 var latlngsLW = [[-409,1176],[-431,1230],[-444,1236],[-434,1241],[-459,1300],[-510,1272],[-510,1252],[-532,1243],[-514,1175],[-497,1151],[-469,1149],[-469,1150],[-461,1154],[-459,1153]];
 
@@ -992,6 +992,13 @@ var GangrelIcon = L.icon({
 });
 var AssamiteIcon = L.icon({
 	iconUrl: 'img/Assamite.webp',
+	iconSize: [28, 28],
+	iconAnchor: [14, 28],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+});
+var SamediIcon = L.icon({
+	iconUrl: 'img/Samedi.webp',
 	iconSize: [28, 28],
 	iconAnchor: [14, 28],
 	tooltipAnchor: [0, 28],
