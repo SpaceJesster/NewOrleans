@@ -1,1 +1,1 @@
-Interactive map of 1976 Louisiana for New Orleans by Night
+Interactive map of 1992 New Orleans for Louisiana by Night
