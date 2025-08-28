@@ -1365,6 +1365,20 @@ var DJIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var AnarchDJIcon = L.icon({
+	iconUrl: 'img/AnarchDJ.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+var ShopIcon = L.icon({
+	iconUrl: 'img/Shop.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 
 <!--Icon Placement-->
 
@@ -1424,6 +1438,12 @@ L.marker([-132,1329],{icon: GioIcon},{riseOnHover: true}).addTo(map).bindPopup('
 
 <!--Underworld Club-->
 L.marker([-324,947],{icon: DJIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Underworld Club</u></p>');
+
+<!--Club Silk-->
+L.marker([-437,1209],{icon: AnarchDJIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Club Silk</u></br></br><img src="img/Anarch.webp" style="width:40px;height:40px;"></br>Anarch</br>Moonshiners</p>');
+
+<!--Maelle's Manifold Mysteries-->
+L.marker([-425,1000],{icon: ShopIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Maelle\'s Manifold Mysteries</u></p>');
 
 	</script>
 
