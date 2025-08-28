@@ -1358,6 +1358,13 @@ var LighthouseIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var DJIcon = L.icon({
+	iconUrl: 'img/DJ.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 
 <!--Icon Placement-->
 
@@ -1411,6 +1418,12 @@ L.marker([-257,882],{icon: LighthouseIcon},{riseOnHover: true}).addTo(map).bindP
 
 <!--Elysium-->
 L.marker([-442,974.5],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Saenger Theatre</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"><br />Camarilla Elysium</center></p>');
+
+<!--Giovanni Manor-->
+L.marker([-132,1329],{icon: GioIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Giovanni Manor</u></br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></p>');
+
+<!--Underworld Club-->
+L.marker([-324,947],{icon: DJIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Underworld Club</u></p>');
 
 	</script>
 
