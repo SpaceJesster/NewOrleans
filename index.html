@@ -1428,6 +1428,20 @@ var GhoulIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var PrisonIcon = L.icon({
+	iconUrl: 'img/Prison.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+var AnarchPrisonIcon = L.icon({
+	iconUrl: 'img/AnarchPrison.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 
 <!--Icon Placement-->
 
@@ -1517,6 +1531,9 @@ L.marker([-314,602],{icon: ArtIcon},{riseOnHover: true}).setZIndexOffset(1000).a
 
 <!--Devil's Lair-->
 L.marker([-480,1034],{icon: BarIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Devil\'s Lair</u></br>Bar</br></br><img src="img/Ghoul.webp" style="width:40px;height:40px;"></p>');
+
+<!--Orleans Parish Prison-->
+L.marker([-429.5,925.5],{icon: AnarchPrisonIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Orleans Parish Prison</u></br></br><img src="img/Anarch.webp" style="width:40px;height:40px;"></br>Insurgents</br>Kimberly Ward</p>');
 
 	</script>
 
