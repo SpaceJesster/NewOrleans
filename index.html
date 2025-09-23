@@ -1442,6 +1442,20 @@ var AnarchPrisonIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var CasinoIcon = L.icon({
+	iconUrl: 'img/Casino.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+var GioCasinoIcon = L.icon({
+	iconUrl: 'img/GioCasino.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 
 <!--Icon Placement-->
 
@@ -1538,12 +1552,11 @@ L.marker([-429.5,925.5],{icon: AnarchPrisonIcon},{riseOnHover: true}).setZIndexO
 <!--The Elixer-->
 L.marker([-323,1006],{icon: AnarchBarIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Elixer</u></br>Bar</br></br><img src="img/Anarch.webp" style="width:40px;height:40px;"></br>Insurgents</br>Rowena</p>');
 
+<!--The Leviathan-->
+L.marker([-225,1130],{icon: GioCasinoIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Leviathan</u></br>Casino</br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Bishop</p>');
+
 	</script>
 
 <body>
 
 </html>
-
-
-
-
