@@ -1475,6 +1475,13 @@ var GioCasinoIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var DetectiveIcon = L.icon({
+	iconUrl: 'img/Detective.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 
 <!--Icon Placement-->
 
@@ -1576,6 +1583,9 @@ L.marker([-225,1130],{icon: GioCasinoIcon},{riseOnHover: true}).setZIndexOffset(
 
 <!--The Black Amp-->
 L.marker([-435,991],{icon: CamBarIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Black Amp</u></br>Bar</br></br><img src="img/Gangrel.webp" style="width:40px;height:40px;"></br>Xiuying Sima</p>');
+
+<!--Alexander Detective Agency-->
+L.marker([-298,993],{icon: DetectiveIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Alexander Detective Agency</u></br>Lady Misty Alexander</p>');
 
 	</script>
 
