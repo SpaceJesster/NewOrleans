@@ -1022,7 +1022,7 @@ var polygonLW = L.polygon(latlngsLW, {color: 'black', stroke: true, opacity: [0.
 <!--Kenner - Giovanni-->
 var latlngsLW = [[-316,502],[-310,586],[-409,562],[-411,504],[-404,501]];
 
-var polygonLW = L.polygon(latlngsLW, {color: '#ffcc00', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Kenner</u></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Giovanni</br>1/1 Domain Free</p>');
+var polygonLW = L.polygon(latlngsLW, {color: '#ffcc00', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Kenner</u></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Giovanni</br>0/1 Domain Free</br>Marco Giovanni: 1 Domain</p>');
 <!--Kenner-->
 var latlngsLW = [[-183,504],[-224,640],[-420,592],[-409,572],[-409,562],[-310,586],[-316,502]];
 
@@ -1053,7 +1053,7 @@ var polygonLW = L.polygon(latlngsLW, {color: '#4f86f7', stroke: true, opacity: [
 <!--New Orleans East District-->
 var latlngsLW = [[-130,1267],[-139,1275],[-204,1280],[-216,1278],[-258,1277],[-293,1277],[-315,1278],[-324,1243],[-336,1119],[-352,1091],[-241,1059],[-190,1069],[-190,1083],[-219,1110],[-228,1113],[-204,1165],[-173,1214]];
 
-var polygonLW = L.polygon(latlngsLW, {color: '#ffcc00', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>New Orleans East District</u></br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Giovanni</br></br>10/10 Domain Free</p>');
+var polygonLW = L.polygon(latlngsLW, {color: '#ffcc00', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>New Orleans East District</u></br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Giovanni</br></br>9/10 Domain Free</br>Greer Dunsirn: 1 Domain</p>');
 <!--Venetian Isles-->
 var latlngsLW = [[-130,1267],[-139,1275],[-204,1280],[-216,1278],[-258,1277],[-293,1277],[-315,1278],[-296,1349],[-263,1499],[-209,1554],[-204,1620],[-210,1656],[-167,1631],[-167,1613],[-172,1602],[-162,1591],[-144,1574],[-133,1580],[-129,1597],[-91,1617],[-86,1600],[-83,1558],[-66,1543],[-74,1539],[-75,1516],[-55,1499],[0,1467],[0,1369],[-46,1339],[-96,1300]];
 
@@ -1097,7 +1097,7 @@ var polygonLW = L.polygon(latlngsLW, {color: '#ff2800', stroke: true, opacity: [
 <!--French Quarter-->
 var latlngsLW = [[-439,973],[-433,978],[-435,980],[-417,995],[-437,1019],[-442,1009],[-469,1006],[-456,989],[-453,990]];
 
-var polygonLW = L.polygon(latlngsLW, {color: '#4f86f7', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>French Quarter</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Camarilla</br></br>5/5 Domain Free</p>');
+var polygonLW = L.polygon(latlngsLW, {color: '#4f86f7', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>French Quarter</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Camarilla</br></br>3/5 Domain Free</br>Buck: 2 Domain</p>');
 <!--Garden District-->
 var latlngsLW = [[-449,908],[-468,938],[-433,965],[-453,990],[-456,989],[-469,1006],[-473,1006],[-508,1009],[-538,979],[-557,932],[-562,911],[-484,904],[-483,915],[-480,921]];
 
@@ -1321,6 +1321,13 @@ var AirportIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var GioAirportIcon = L.icon({
+	iconUrl: 'img/GioAirport.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 var FlowerIcon = L.icon({
 	iconUrl: 'img/Flower.webp',	
 	iconSize: [28, 28],
@@ -1504,7 +1511,7 @@ L.marker([-771,1091],{icon: AnchorIcon},{riseOnHover: true}).addTo(map).bindPopu
 L.marker([-456.5,955],{icon: FootballIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Louisiana Superdome</u></p>');
 
 <!--New Orleans International Airport-->
-L.marker([-358,553],{icon: AirportIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>New Orleans International Airport</u></p>');
+L.marker([-358,553],{icon: GioAirportIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>New Orleans International Airport</u></br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Marco Giovanni</br>Domain 1</p>');
 
 <!--New Orleans Lakefront Airport-->
 L.marker([-220,1080],{icon: AirportIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>New Orleans Lakefront Airport</u></p>');
@@ -1543,7 +1550,7 @@ L.marker([-132,1329],{icon: GioIcon},{riseOnHover: true}).setZIndexOffset(2000).
 L.marker([-324,947],{icon: DJIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Underworld Club</u></br>Night Club</p>');
 
 <!--Club Silk-->
-L.marker([-437,1209],{icon: AnarchDJIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Club Silk</u></br>Night Club</br></br><img src="img/Anarch.webp" style="width:40px;height:40px;"></br>Moonshiners</br>Moira Poe</p>');
+L.marker([-437,1209],{icon: AnarchDJIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Club Silk</u></br>Night Club</br></br><img src="img/Anarch.webp" style="width:40px;height:40px;"></br>Moonshiners</br>Moira Poe</br>Domain 1</p>');
 
 <!--The Refreshment Realm-->
 L.marker([-420,1098],{icon: AnarchBarIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Refreshment Realm</u></br>Bar</br></br><img src="img/Anarch.webp" style="width:40px;height:40px;"></br>Moonshiners</br>Tommy \'Swiss\' Stackhouse</p>');
@@ -1564,7 +1571,7 @@ L.marker([-589,1014],{icon: FlowerIcon},{riseOnHover: true}).setZIndexOffset(100
 L.marker([-469,969],{icon: CamArtIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Arachne Gallerie</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Louis Matherne</p>');
 
 <!--The Louisiana Taxi Company-->
-L.marker([-246,1071],{icon: GioTaxiIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Louisiana Taxi Company</u></br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Greer Dunsirn</p>');
+L.marker([-246,1071],{icon: GioTaxiIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Louisiana Taxi Company</u></br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Greer Dunsirn</br>Domain 1</p>');
 
 <!--The Obsidian-->
 L.marker([-314,602],{icon: ArtIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Obsidian</u></br>Art Gallery</p>');
@@ -1579,7 +1586,7 @@ L.marker([-429.5,925.5],{icon: AnarchPrisonIcon},{riseOnHover: true}).setZIndexO
 L.marker([-323,1006],{icon: AnarchBarIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Elixer</u></br>Bar</br></br><img src="img/Anarch.webp" style="width:40px;height:40px;"></br>Insurgents</br>Rowena</p>');
 
 <!--The Leviathan-->
-L.marker([-225,1130],{icon: GioCasinoIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Leviathan</u></br>Casino</br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Bishop</p>');
+L.marker([-225,1130],{icon: GioCasinoIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Leviathan</u></br>Casino</br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></p>');
 
 <!--The Black Amp-->
 L.marker([-435,991],{icon: CamBarIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>The Black Amp</u></br>Bar</br></br><img src="img/Gangrel.webp" style="width:40px;height:40px;"></br>Xiuying Sima</p>');
