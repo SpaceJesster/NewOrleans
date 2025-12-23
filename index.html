@@ -978,7 +978,7 @@ var polygonLW = L.polygon(latlngsLW, {color: '#228b22', stroke: true, opacity: [
 <!--South Kenner-->
 var latlngsLW = [[-409,572],[-482,538],[-485,512],[-411,504]];
 
-var polygonLW = L.polygon(latlngsLW, {color: 'black', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>South Kenner</br></br>1/1 Domain Free</p>');
+var polygonLW = L.polygon(latlngsLW, {color: '#4f86f7', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>South Kenner</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Camarilla</br></br>0/1 Domain Free</br>Circle of Trust: 1 Domain</p>');
 <!--Ama-->
 var latlngsLW = [[-411,504],[-485,512],[-531,413],[-497,403]];
 
@@ -1105,7 +1105,7 @@ var polygonLW = L.polygon(latlngsLW, {color: '#4f86f7', stroke: true, opacity: [
 <!--Uptown District-->
 var latlngsLW = [[-465,821],[-409,849],[-390,855],[-391,861],[-395,871],[-386,884],[-410,891],[-412,894],[-417,890],[-411,884],[-424,872],[-430,878],[-449,908],[-480,921],[-483,915],[-484,904],[-562,911],[-568,888],[-561,850],[-540,825],[-505,824]];
 
-var polygonLW = L.polygon(latlngsLW, {color: '#4f86f7', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Uptown District</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Camarilla</br></br>5/5 Domain Free</p>');
+var polygonLW = L.polygon(latlngsLW, {color: '#4f86f7', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Uptown District</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Camarilla</br></br>2/5 Domain Free</br>Hester Montgomery: 3 Domain</p>');
 
 <!--Domains-->
 
@@ -1295,6 +1295,13 @@ var CollegeIcon = L.icon({
 	});
 var ZooIcon = L.icon({
 	iconUrl: 'img/Zoo.webp',
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+var CamZooIcon = L.icon({
+	iconUrl: 'img/CamZoo.webp',
 	iconSize: [28, 28],
 	iconAnchor: [14, 14],
 	tooltipAnchor: [0, 28],
@@ -1539,7 +1546,7 @@ L.marker([-520,889],{icon: LibraryIcon},{riseOnHover: true}).addTo(map).bindPopu
 L.marker([-423,1327],{icon: SamediIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Mysterious Shack</u></br></br><img src="img/Samedi.webp" style="width:40px;height:40px;"></br>Location unknown</br>to the uninformed</p>');
 
 <!--Audubon Park-->
-L.marker([-513,851],{icon: ParkIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Audubon Park</u></p>');
+L.marker([-513,851],{icon: CamParkIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Audubon Park</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Hester Montgomery</p>');
 
 <!--City Park-->
 L.marker([-314,930],{icon: CamParkIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>City Park</u></br></br><img src="img/Camarilla.webp" style="width:40px;height:40px;"></br>Xiuying Sima</br>Domain 2</p>');
