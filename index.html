@@ -1089,7 +1089,7 @@ var polygonLW = L.polygon(latlngsLW, {color: '#ff2800', stroke: true, opacity: [
 <!--Gentily - Giovanni-->
 var latlngsLW = [[-288,946],[-286,946],[-271,951],[-249,951],[-238,970],[-232,1038],[-241,1059],[-305,1077],[-319,1046],[-321,1035],[-282,1033]];
 
-var polygonLW = L.polygon(latlngsLW, {color: '#ffcc00', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Gentily</u></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Giovanni</br></br>1/2 Domain Free</br>Leone Giovanni: 1 Domain</p>');
+var polygonLW = L.polygon(latlngsLW, {color: '#ffcc00', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Gentily</u></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Giovanni</br></br>0/2 Domain Free</br>Leone Giovanni: 1 Domain</br>Mr. Rose: 1 Domain</p>');
 <!--Lakeview-->
 var latlngsLW = [[-330,945],[-286,946],[-271,951],[-249,951],[-249,865],[-249,865],[-390,855],[-391,861],[-395,871],[-386,884],[-377,881],[-369,904],[-372,935],[-346,944]];
 
@@ -1507,6 +1507,13 @@ var DetectiveIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var GioLawIcon = L.icon({
+	iconUrl: 'img/GioLaw.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 
 <!--Icon Placement-->
 
@@ -1614,6 +1621,9 @@ L.marker([-298,993],{icon: DetectiveIcon},{riseOnHover: true}).setZIndexOffset(1
 
 <!--Stillgrain-->
 L.marker([-442,995],{icon: BarIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Stillgrain - The Hollow Rose</u></br>Bar</br></br><img src="img/Toreador.webp" style="width:40px;height:40px;"></br>Buck</br>Domain 1</p>');
+
+<!--Landry, Landry, & Rose-->
+L.marker([-267,1009],{icon: GioLawIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Landry, Landry, & Rose</u></br>Law Office</br></br><img src="img/Giovanni.webp" style="width:40px;height:40px;"></br>Mr. Rose</br>Domain 1</p>');
 
 	</script>
 
